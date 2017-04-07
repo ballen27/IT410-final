@@ -1,0 +1,21 @@
+{
+  "name": "it410",
+  "version": "1.0.0",
+  "description": "it 410 final project",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ballen27/IT410-final.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ballen27/IT410-final/issues"
+  },
+  "homepage": "https://github.com/ballen27/IT410-final#readme"
+}

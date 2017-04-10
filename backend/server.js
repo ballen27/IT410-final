@@ -3,6 +3,7 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var multer = require('multer');
 var promise = require('promise');
+var path = require('path');
 // mongoose.Promise = global.Promise;
 // mongoose.connect('mongodb://localhost/rest_test');
 // mongoose.connect('localhost', 'okular');
@@ -25,10 +26,10 @@ var upload = multer({ storage : storage}).single('userPhoto');
 
 // Define homepage
 app.get('/', function(req,res){
-    res.sendFile(__dirname + "/public/index.html");
+    res.sendFile(path.resolve("../index.html"));
 });
 
-app.use(express.static('public'));
+app.use(express.static('../'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/api', require('./api'));
 

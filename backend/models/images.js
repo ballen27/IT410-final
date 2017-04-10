@@ -7,10 +7,10 @@ var mongoose = restful.mongoose;
 
 
 //Schema
-var userSchema = new mongoose.Schema({
-    userName: String,
-    password: String
+var imageSchema = new mongoose.Schema({
+    imageName: String,
+    imagePath: String
 });
 
 //Return model
-module.exports = restful.model('Users', userSchema);
+module.exports = restful.model('Images', imageSchema);

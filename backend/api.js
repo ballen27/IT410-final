@@ -6,15 +6,12 @@ var router = express.Router();
 
 
 //Models
-var Video = require('../models/video');
-var User = require('../models/user');
+var Image = require('./models/images');
 
 //Routes
-User.methods(['get', 'put', 'post', 'delete']);
-User.register(router, '/users');
+Image.methods(['get', 'put', 'post', 'delete']);
+Image.register(router, '/images');
 
-Video.methods(['get', 'put', 'post', 'delete']);
-Video.register(router, '/videos');
 
 
 module.exports = router;

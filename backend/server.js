@@ -30,7 +30,7 @@ app.get('/', function(req,res){
 
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use('/api', require('./routes/api'));
+app.use('/api', require('./api'));
 
 
 // API/ROUTE to hit for video uploads
